@@ -28,7 +28,7 @@ The component `<LetterGlitch \>` was taken from [ReactBits.dev](https://www.reac
 2. Access the share options
 3. Select 'copy embed code'
 ```
-<iframe src="https://open.spotify.com/embed/album/ALBUM_ID" style="border-radius:12px border:0;" class="w-full h-40" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+<iframe src="https://open.spotify.com/embed/album/YOUR_ALBUM_ID_HERE" style="border-radius:12px border:0;" class="w-full h-40" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 ```
 4. Insert the embed code on footer.astro
 
@@ -65,7 +65,7 @@ git clone https://github.com/Gothsec/Astro-portfolio
 ```  
 npm install
 ```
-3. Start the develpoment server:
+3. Start the development server:
 ```  
 npm run dev
 ```
