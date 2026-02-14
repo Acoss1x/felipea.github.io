@@ -1,0 +1,22 @@
+---
+import LetterGlitch from "../React/LetterGlitch.tsx";
+import SkillsList from "../React/SkillsList.tsx";
+---
+
+<section id="presentacion" class="text-[var(--white)] border-t border-[#ffffff10]">
+  <div class="max-w-5xl mx-auto space-y-8 py-14">
+    <div class="flex flex-col lg:flex-row items-center gap-8">
+      <SkillsList client:load />
+      <div class="flex justify-center md:w-full md:h-[292px] size-[290px] pt-3 md:pt-9 md:ml-16">
+        <LetterGlitch
+          client:load
+          glitchColors={["#5e4491", "#A476FF", "#241a38"]}
+          glitchSpeed={33}
+          centerVignette={false}
+          outerVignette={true}
+          smooth={true}
+        />
+      </div>
+    </div>
+  </div>
+</section>
