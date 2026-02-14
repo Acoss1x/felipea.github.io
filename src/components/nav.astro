@@ -137,7 +137,7 @@ const navItems: NavItem[] = [
     { passive: true }
   );
 
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  document.querySelectorAll('#main-nav a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
       const target = e.currentTarget as HTMLAnchorElement;
