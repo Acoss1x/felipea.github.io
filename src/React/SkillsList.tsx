@@ -23,23 +23,24 @@ const SkillsList: React.FC<Props> = ({
 
             {videoUrl ? (
   <div className="w-full flex justify-center">
-  <div className="relative w-full aspect-[9/16] rounded-xl overflow-hidden">
-  <iframe
-    className="absolute inset-0 w-full h-full"
-    src={videoUrl}
-    title="Video de presentación"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowFullScreen
-  />
-</div>
-</div>
+    <div className="relative w-full max-w-[420px] aspect-[9/16] rounded-2xl overflow-hidden shadow-lg">
+      <iframe
+        className="absolute inset-0 w-full h-full"
+        src={videoUrl}
+        title="Video de presentación"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      />
+    </div>
+  </div>
 ) : (
-  <div className="w-full aspect-[9/16] max-w-[340px] mx-auto rounded-xl border border-dashed border-[var(--white-icon-tr)] flex items-center justify-center">
+  <div className="w-full aspect-[9/16] max-w-[420px] mx-auto rounded-2xl border border-dashed border-[var(--white-icon-tr)] flex items-center justify-center">
     <span className="text-[var(--white-icon)] text-sm opacity-80">
-      Aquí va tu video (embed)
+      Aquí va tu video
     </span>
   </div>
 )}
+
           </div>
         </div>
 
