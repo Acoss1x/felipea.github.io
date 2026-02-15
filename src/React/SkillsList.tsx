@@ -27,7 +27,7 @@ const SkillsList: React.FC<Props> = ({ videoUrl, photoUrl }) => {
     controls
     playsInline
   >
-    <source src="/felipea.github.io/presentacion.mp4" type="video/mp4" />
+    <source src="/felipea.github.io/bases1.mp4" type="video/mp4" />
     Tu navegador no soporta video.
   </video>
 ) : (
