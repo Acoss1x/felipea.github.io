@@ -23,15 +23,15 @@ const SkillsList: React.FC<Props> = ({
 
             {videoUrl ? (
   <div className="w-full flex justify-center">
-  <div className="relative w-full max-w-[360px] aspect-[9/16] rounded-xl overflow-hidden">
-    <iframe
-      className="absolute inset-0 w-full h-full"
-      src={videoUrl}
-      title="Video de presentación"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowFullScreen
-    />
-  </div>
+  <div className="relative w-full aspect-[9/16] rounded-xl overflow-hidden">
+  <iframe
+    className="absolute inset-0 w-full h-full"
+    src={videoUrl}
+    title="Video de presentación"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+  />
+</div>
 </div>
 ) : (
   <div className="w-full aspect-[9/16] max-w-[340px] mx-auto rounded-xl border border-dashed border-[var(--white-icon-tr)] flex items-center justify-center">
@@ -48,21 +48,23 @@ const SkillsList: React.FC<Props> = ({
           <div className="p-4">
             <p className="text-[var(--white-icon)] text-sm mb-3">Foto</p>
 
-            {photoUrl ? (
-              <div className="w-full rounded-xl overflow-hidden">
-                <img
-                  src={photoUrl}
-                  alt="Foto de presentación"
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            ) : (
-              <div className="w-full aspect-square rounded-xl border border-dashed border-[var(--white-icon-tr)] flex items-center justify-center">
-                <span className="text-[var(--white-icon)] text-sm opacity-80">
-                  Aquí va tu foto
-                </span>
-              </div>
-            )}
+                {photoUrl ? (
+      <div className="relative w-full aspect-[9/16] rounded-xl overflow-hidden">
+        <img
+          src={photoUrl}
+          alt="Foto de presentación"
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="lazy"
+        />
+      </div>
+    ) : (
+      <div className="w-full aspect-[9/16] rounded-xl border border-dashed border-[var(--white-icon-tr)] flex items-center justify-center">
+        <span className="text-[var(--white-icon)] text-sm opacity-80">
+          Aquí va tu foto
+        </span>
+      </div>
+    )}
+
           </div>
         </div>
       </div>
