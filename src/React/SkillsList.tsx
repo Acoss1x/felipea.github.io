@@ -22,9 +22,9 @@ const SkillsList: React.FC<Props> = ({
             <p className="text-[var(--white-icon)] text-sm mb-3">Video</p>
 
             {videoUrl ? (
-              <div className="relative w-full pt-[56.25%] rounded-xl overflow-hidden">
+              <div className="relative w-full aspect-video rounded-xl overflow-hidden">
                 <iframe
-                  className="absolute inset-0 w-full h-full"
+                  className="absolute inset-0 w-full h-full rounded-xl"
                   src={videoUrl}
                   title="Video de presentación"
                   frameBorder="0"
