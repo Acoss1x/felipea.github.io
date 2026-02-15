@@ -41,7 +41,6 @@ const SkillsList: React.FC<Props> = ({
     </span>
   </div>
 )}
-            )}
           </div>
         </div>
 
