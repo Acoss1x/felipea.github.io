@@ -1,71 +1,66 @@
 import React from "react";
 
 type Props = {
-  videoUrl?: string; 
-  photoUrl?: string; 
+  videoUrl?: string;
+  photoUrl?: string;
 };
 
-const SkillsList: React.FC<Props> = ({
-  videoUrl,
-  photoUrl,
-}) => {
+const SkillsList: React.FC<Props> = ({ videoUrl, photoUrl }) => {
   return (
-    <div className="text-left pt-3 md:pt-9">
+    <div className="text-left w-full pt-3 md:pt-9">
       <h3 className="text-[var(--white)] text-3xl md:text-4xl font-semibold md:mb-6">
         Presentación
       </h3>
 
-      <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
+      {/* Contenedor grande */}
+      <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-8 w-full">
         {/* VIDEO */}
-        <div className="w-full bg-[#1414149c] rounded-2xl border border-[var(--white-icon-tr)] overflow-hidden">
-          <div className="p-4">
-            <p className="text-[var(--white-icon)] text-sm mb-3">Video</p>
+        <div className="w-full">
+          <p className="text-[var(--white-icon)] text-sm mb-3">Video</p>
 
-            {videoUrl ? (
-  <div className="w-full flex justify-center">
-    <div className="relative w-full max-w-[420px] aspect-[9/16] rounded-2xl overflow-hidden shadow-lg">
-      <iframe
-        className="absolute inset-0 w-full h-full"
-        src={videoUrl}
-        title="Video de presentación"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-      />
-    </div>
-  </div>
-) : (
-  <div className="w-full aspect-[9/16] max-w-[420px] mx-auto rounded-2xl border border-dashed border-[var(--white-icon-tr)] flex items-center justify-center">
-    <span className="text-[var(--white-icon)] text-sm opacity-80">
-      Aquí va tu video
-    </span>
-  </div>
-)}
-
+          <div className="w-full bg-[#1414149c] rounded-3xl border border-[var(--white-icon-tr)] overflow-hidden">
+            {/* En desktop lo hacemos ALTO para que se vea GRANDE */}
+            <div className="relative w-full h-[520px] md:h-[620px]">
+              {videoUrl ? (
+                <iframe
+                  className="absolute inset-0 w-full h-full"
+                  src={videoUrl}
+                  title="Video de presentación"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              ) : (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-[var(--white-icon)] text-sm opacity-80">
+                    Aquí va tu video
+                  </span>
+                </div>
+              )}
+            </div>
           </div>
         </div>
 
         {/* FOTO */}
-        <div className="w-full bg-[#1414149c] rounded-2xl border border-[var(--white-icon-tr)] overflow-hidden">
-          <div className="p-4">
-            <p className="text-[var(--white-icon)] text-sm mb-3">Foto</p>
+        <div className="w-full">
+          <p className="text-[var(--white-icon)] text-sm mb-3">Foto</p>
 
-                {photoUrl ? (
-      <div className="relative w-full aspect-[9/16] rounded-xl overflow-hidden">
-        <img
-          src={photoUrl}
-          alt="Foto de presentación"
-          className="absolute inset-0 w-full h-full object-cover"
-          loading="lazy"
-        />
-      </div>
-    ) : (
-      <div className="w-full aspect-[9/16] rounded-xl border border-dashed border-[var(--white-icon-tr)] flex items-center justify-center">
-        <span className="text-[var(--white-icon)] text-sm opacity-80">
-          Aquí va tu foto
-        </span>
-      </div>
-    )}
-
+          <div className="w-full bg-[#1414149c] rounded-3xl border border-[var(--white-icon-tr)] overflow-hidden">
+            <div className="relative w-full h-[520px] md:h-[620px]">
+              {photoUrl ? (
+                <img
+                  src={photoUrl}
+                  alt="Foto de presentación"
+                  className="absolute inset-0 w-full h-full object-cover"
+                  loading="lazy"
+                />
+              ) : (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-[var(--white-icon)] text-sm opacity-80">
+                    Aquí va tu foto
+                  </span>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
