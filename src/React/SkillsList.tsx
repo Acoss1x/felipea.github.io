@@ -1,8 +1,8 @@
 import React from "react";
 
 type Props = {
-  videoUrl?: string; // ejemplo: "https://www.youtube.com/embed/VIDEO_ID"
-  photoUrl?: string; // ejemplo: "/me.jpg" (en public/) o una URL
+  videoUrl?: string; 
+  photoUrl?: string; 
 };
 
 const SkillsList: React.FC<Props> = ({

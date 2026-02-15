@@ -6,7 +6,11 @@ import SkillsList from "../React/SkillsList.tsx";
 <section id="presentacion" class="text-[var(--white)] border-t border-[#ffffff10]">
   <div class="max-w-5xl mx-auto space-y-8 py-14">
     <div class="flex flex-col lg:flex-row items-center gap-8">
-      <SkillsList client:load />
+      <SkillsList
+      client:load
+      videoUrl="https://www.youtube.com/embed/Q1IRbwqvQxQ"
+      photoUrl="/foto.jpg"
+      />
       <div class="flex justify-center md:w-full md:h-[292px] size-[290px] pt-3 md:pt-9 md:ml-16">
         <LetterGlitch
           client:load
