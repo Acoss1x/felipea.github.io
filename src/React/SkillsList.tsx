@@ -22,20 +22,22 @@ const SkillsList: React.FC<Props> = ({ videoUrl, photoUrl }) => {
             {/* En desktop lo hacemos ALTO para que se vea GRANDE */}
             <div className="relative w-full h-[550px] md:h-[700px]">
               {videoUrl ? (
-                <iframe
-                  className="absolute inset-0 w-full h-full"
-                  src={videoUrl}
-                  title="Video de presentación"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                />
-              ) : (
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-[var(--white-icon)] text-sm opacity-80">
-                    Aquí va tu video
-                  </span>
-                </div>
-              )}
+  <video
+    className="w-full aspect-[9/16] rounded-xl object-cover"
+    controls
+    playsInline
+  >
+    <source src="/felipea.github.io/presentacion.mp4" type="video/mp4" />
+    Tu navegador no soporta video.
+  </video>
+) : (
+  <div className="w-full aspect-[9/16] rounded-xl border border-dashed border-[var(--white-icon-tr)] flex items-center justify-center">
+    <span className="text-[var(--white-icon)] text-sm opacity-80">
+      Aquí va tu video
+    </span>
+  </div>
+)}
+
             </div>
           </div>
         </div>
