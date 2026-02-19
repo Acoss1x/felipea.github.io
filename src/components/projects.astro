@@ -60,21 +60,20 @@ const projects: Project[] = [
     <div class="flex flex-col gap-8">
 
       <!-- Modelado -->
-<div class="rounded-2xl border border-white/10 bg-[#141414] p-10">
-  <h4 class="text-4xl font-semibold mb-10">Modelado</h4>
+<div class="flex flex-col gap-12">
 
+  <!-- Imagen grande arriba -->
+  <div class="overflow-hidden rounded-3xl group">
+    <Image
+      src={modelo1}
+      alt="Modelo 1"
+      class="w-full h-[600px] object-cover transition duration-500 group-hover:scale-110"
+    />
+  </div>
+
+  <!-- Dos debajo -->
   <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-
-
-    <div class="overflow-hidden rounded-3xl group shadow-lg">
-      <Image
-        src={modelo1}
-        alt="Modelo 1"
-        class="w-full h-[500px] object-cover transition duration-500 group-hover:scale-110"
-      />
-    </div>
-
-    <div class="overflow-hidden rounded-3xl group shadow-lg">
+    <div class="overflow-hidden rounded-3xl group">
       <Image
         src={modelo2}
         alt="Modelo 2"
@@ -82,16 +81,17 @@ const projects: Project[] = [
       />
     </div>
 
-    <div class="overflow-hidden rounded-3xl group shadow-lg">
+    <div class="overflow-hidden rounded-3xl group">
       <Image
         src={modelo3}
         alt="Modelo 3"
         class="w-full h-[500px] object-cover transition duration-500 group-hover:scale-110"
       />
     </div>
-
   </div>
+
 </div>
+
 
 
 
