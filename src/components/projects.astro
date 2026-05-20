@@ -237,7 +237,7 @@ const projects: Project[] = [
 
       <!-- Algebra Relacional -->
       <div class="rounded-2xl border border-[var(--white-icon-tr)] bg-[#1414149c] p-6 hover:bg-[var(--white-icon-tr)] transition">
-        <h4 class="text-2xl font-semibold mb-2">Normalización</h4>
+        <h4 class="text-2xl font-semibold mb-2">Algebra Relacional</h4>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
         <a 
           href={`${import.meta.env.BASE_URL}/algebrarelacional.pdf`} 
@@ -253,17 +253,61 @@ const projects: Project[] = [
       <!-- SQL -->
       <div class="rounded-2xl border border-[var(--white-icon-tr)] bg-[#1414149c] p-6 hover:bg-[var(--white-icon-tr)] transition">
         <h4 class="text-2xl font-semibold mb-2">SQL</h4>
-        <p class="text-[var(--white-icon)] text-sm">
-          Creación de bases de datos, tablas y consultas simples.
-        </p>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+        <a 
+          href={`${import.meta.env.BASE_URL}/01_crear_objetos.sql`} 
+          download
+          class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
+        >
+          SQL 01 Crear Objetos Gimnasio
+        </a>
+
+        <a 
+          href={`${import.meta.env.BASE_URL}/02_insertar_registros.sql`} 
+          download
+          class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
+        >
+          SQL 02 Insertar Registros Gimnasio
+        </a>
+
+        <a 
+          href={`${import.meta.env.BASE_URL}/03_scripts_varios.sql`} 
+          download
+          class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
+        >
+          SQL 03 Scripts Varios Gimnasio
+        </a>
+      </div>
+      </div>
       </div>
 
       <!-- Proyecto -->
       <div class="rounded-2xl border border-[var(--white-icon-tr)] bg-[#1414149c] p-6 hover:bg-[var(--white-icon-tr)] transition">
         <h4 class="text-2xl font-semibold mb-2">Proyecto</h4>
-        <p class="text-[var(--white-icon)] text-sm">
-          Evidencias del proyecto final.
-        </p>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <a 
+          href={`${import.meta.env.BASE_URL}/crowsfootgimnasio.docx`} 
+          download
+          class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
+        >
+          MER-E Crow's Foot Proyecto Final
+        </a>
+
+        <a 
+          href={`${import.meta.env.BASE_URL}/meregimnasio.docx`} 
+          download
+          class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
+        >
+          MER-E Peter Chen Proyecto Final
+        </a>
+
+        <a 
+          href={`${import.meta.env.BASE_URL}/relacionalgimnasio.dmd`} 
+          download
+          class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
+        >
+          Modelo Relacional Proyecto Final
+        </a>
       </div>
 
     </div>

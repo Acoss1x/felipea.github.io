@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="gimnasio proyecto" id="78405EA9-2C5F-6D92-E688-3C40BADB1424" version="3.5">
+<createdBy>felip</createdBy>
+<createdTime>2026-05-09 17:19:51 UTC</createdTime>
+<ownerDesignName>gimnasio proyecto</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>78405EA9-2C5F-6D92-E688-3C40BADB1424</designId>
+</OSDM_Design>
