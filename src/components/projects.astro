@@ -60,256 +60,284 @@ const projects: Project[] = [
 
     <div class="flex flex-col gap-8">
 
-      <!-- Modelado -->
-<div class="rounded-2xl border border-white/10 bg-[#141414] p-10">
-  <h4 class="text-4xl font-semibold mb-10">Modelado</h4>
+      <!-- MODELADO -->
+      <div class="rounded-2xl border border-white/10 bg-[#141414] p-10">
+        <h4 class="text-4xl font-semibold mb-10">Modelado</h4>
 
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <!-- CARD -->
+          <div class="bg-white text-black rounded-2xl p-5 flex flex-col justify-between gap-4 hover:scale-[1.02] transition">
+            <div>
+              <h5 class="text-xl font-semibold">Modelo 1</h5>
+              <p class="text-sm text-gray-600">
+                Primer ejercicio de modelado entidad relación.
+              </p>
+            </div>
 
-  <a 
-  href={`${import.meta.env.BASE_URL}/Modelo1.png`} 
-  download
-  class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
->
-  Descargar Modelo 1
-</a>
+            <a
+              href={`${import.meta.env.BASE_URL}/Modelo1.png`}
+              download
+              class="bg-black text-white text-center py-3 rounded-xl font-medium hover:bg-neutral-800 transition"
+            >
+              Descargar
+            </a>
+          </div>
 
-<a 
-  href={`${import.meta.env.BASE_URL}/Modelo2.png`} 
-  download
-  class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
->
-  Descargar Modelo 2
-</a>
+          <!-- CARD -->
+          <div class="bg-white text-black rounded-2xl p-5 flex flex-col justify-between gap-4 hover:scale-[1.02] transition">
+            <div>
+              <h5 class="text-xl font-semibold">Modelo 2</h5>
+              <p class="text-sm text-gray-600">
+                Modelo relacional del ejercicio de avión.
+              </p>
+            </div>
 
-<a 
-  href={`${import.meta.env.BASE_URL}/Modelo3.png`} 
-  download
-  class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
->
-  Descargar Modelo 3
-</a>
+            <a
+              href={`${import.meta.env.BASE_URL}/Modelo2.png`}
+              download
+              class="bg-black text-white text-center py-3 rounded-xl font-medium hover:bg-neutral-800 transition"
+            >
+              Descargar
+            </a>
+          </div>
 
-<a 
-  href={`${import.meta.env.BASE_URL}/Modelo4.png`} 
-  download
-  class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
->
-  Descargar Modelo 4
-</a>
+          <!-- CARD -->
+          <div class="bg-white text-black rounded-2xl p-5 flex flex-col justify-between gap-4 hover:scale-[1.02] transition">
+            <div>
+              <h5 class="text-xl font-semibold">Modelo 3</h5>
+              <p class="text-sm text-gray-600">
+                Modelo MER de biblioteca.
+              </p>
+            </div>
 
-<a 
-  href={`${import.meta.env.BASE_URL}/Modelo5.png`} 
-  download
-  class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
->
-  Descargar Modelo 5
-</a>
+            <a
+              href={`${import.meta.env.BASE_URL}/Modelo3.png`}
+              download
+              class="bg-black text-white text-center py-3 rounded-xl font-medium hover:bg-neutral-800 transition"
+            >
+              Descargar
+            </a>
+          </div>
 
-<a 
-  href={`${import.meta.env.BASE_URL}/Modelo6.png`} 
-  download
-  class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
->
-  Descargar Modelo 6
-</a>
+          <!-- CARD -->
+          <div class="bg-white text-black rounded-2xl p-5 flex flex-col justify-between gap-4 hover:scale-[1.02] transition">
+            <div>
+              <h5 class="text-xl font-semibold">Modelo 4</h5>
+              <p class="text-sm text-gray-600">
+                Ejercicio avanzado de modelado.
+              </p>
+            </div>
 
-<a 
-  href={`${import.meta.env.BASE_URL}/Modelo7.png`} 
-  download
-  class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
->
-  Descargar Modelo 7
-</a>
+            <a
+              href={`${import.meta.env.BASE_URL}/Modelo4.png`}
+              download
+              class="bg-black text-white text-center py-3 rounded-xl font-medium hover:bg-neutral-800 transition"
+            >
+              Descargar
+            </a>
+          </div>
 
-<a 
-  href={`${import.meta.env.BASE_URL}/Modelo8.png`} 
-  download
-  class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
->
-  Descargar Modelo 8
-</a>
-
-<a 
-  href={`${import.meta.env.BASE_URL}/Modelo9.png`} 
-  download
-  class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
->
-  Descargar Modelo 9
-</a>
-
-<a 
-  href={`${import.meta.env.BASE_URL}/Modelo10.png`} 
-  download
-  class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
->
-  Descargar Modelo 10
-</a>
-
-<a 
-  href={`${import.meta.env.BASE_URL}/Modelo11y12.png`} 
-  download
-  class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
->
-  Descargar Modelo 11 y 12
-</a>
-
-<a 
-  href={`${import.meta.env.BASE_URL}/Modelo13.png`} 
-  download
-  class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
->
-  Descargar Modelo 13
-</a>
-
-<a 
-  href={`${import.meta.env.BASE_URL}/tallerv4.png`} 
-  download
-  class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
->
-  Descargar Modelo 14 al 17
-</a>
-
-<a 
-  href={`${import.meta.env.BASE_URL}/punto1primertaller.png`} 
-  download
-  class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
->
-  MER Punto 1 Primer Taller
-</a>
-
-<a 
-  href={`${import.meta.env.BASE_URL}/residuosOK.png`} 
-  download
-  class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
->
-  MER-E Punto 2 Primer Taller (Residuos)
-</a>
-
-<a 
-  href={`${import.meta.env.BASE_URL}/comidaOK.png`} 
-  download
-  class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
->
-  MER-E Punto 2 Primer Taller (Comidas)
-</a>
-
-<a 
-  href={`${import.meta.env.BASE_URL}/comidas.dmd`} 
-  download
-  class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
->
-  Modelo Relacional Punto 2 Primer Taller (Comidas)
-</a>
-
-<a 
-  href={`${import.meta.env.BASE_URL}/residuosok.dmd`} 
-  download
-  class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
->
-  Modelo Relacional Punto 2 Primer Taller (Residuos)
-</a>
-
-</div>
-</div>
-
-
-
-
-
-
-      <!-- Normalización -->
-      <div class="rounded-2xl border border-[var(--white-icon-tr)] bg-[#1414149c] p-6 hover:bg-[var(--white-icon-tr)] transition">
-        <h4 class="text-2xl font-semibold mb-2">Normalización</h4>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-        <a 
-          href={`${import.meta.env.BASE_URL}/Normalizacion.xlsx`} 
-          download
-          class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
-        >
-          Ejercicios Normalización Segundo Taller
-        </a>
         </div>
       </div>
 
+      <!-- NORMALIZACIÓN -->
+      <div class="rounded-2xl border border-white/10 bg-[#141414] p-10">
+        <h4 class="text-4xl font-semibold mb-10">Normalización</h4>
 
-      <!-- Algebra Relacional -->
-      <div class="rounded-2xl border border-[var(--white-icon-tr)] bg-[#1414149c] p-6 hover:bg-[var(--white-icon-tr)] transition">
-        <h4 class="text-2xl font-semibold mb-2">Algebra Relacional</h4>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-        <a 
-          href={`${import.meta.env.BASE_URL}/algebrarelacional.pdf`} 
-          download
-          class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
-        >
-          Taller Álgebra Relacional
-        </a>
-        </div>
-        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
+          <div class="bg-white text-black rounded-2xl p-5 flex flex-col justify-between gap-4 hover:scale-[1.02] transition">
+            <div>
+              <h5 class="text-xl font-semibold">
+                Ejercicios de Normalización
+              </h5>
+
+              <p class="text-sm text-gray-600">
+                Taller de normalización realizado en Excel.
+              </p>
+            </div>
+
+            <a
+              href={`${import.meta.env.BASE_URL}/Normalizacion.xlsx`}
+              download
+              class="bg-black text-white text-center py-3 rounded-xl font-medium hover:bg-neutral-800 transition"
+            >
+              Descargar
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ALGEBRA -->
+      <div class="rounded-2xl border border-white/10 bg-[#141414] p-10">
+        <h4 class="text-4xl font-semibold mb-10">Álgebra Relacional</h4>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <div class="bg-white text-black rounded-2xl p-5 flex flex-col justify-between gap-4 hover:scale-[1.02] transition">
+            <div>
+              <h5 class="text-xl font-semibold">
+                Taller Álgebra Relacional
+              </h5>
+
+              <p class="text-sm text-gray-600">
+                Consultas y ejercicios de álgebra relacional.
+              </p>
+            </div>
+
+            <a
+              href={`${import.meta.env.BASE_URL}/algebrarelacional.pdf`}
+              download
+              class="bg-black text-white text-center py-3 rounded-xl font-medium hover:bg-neutral-800 transition"
+            >
+              Descargar
+            </a>
+          </div>
+
+        </div>
+      </div>
 
       <!-- SQL -->
-      <div class="rounded-2xl border border-[var(--white-icon-tr)] bg-[#1414149c] p-6 hover:bg-[var(--white-icon-tr)] transition">
-        <h4 class="text-2xl font-semibold mb-2">SQL</h4>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-        <a 
-          href={`${import.meta.env.BASE_URL}/01_crear_objetos.sql`} 
-          download
-          class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
-        >
-          SQL 01 Crear Objetos Gimnasio
-        </a>
+      <div class="rounded-2xl border border-white/10 bg-[#141414] p-10">
+        <h4 class="text-4xl font-semibold mb-10">SQL</h4>
 
-        <a 
-          href={`${import.meta.env.BASE_URL}/02_insertar_registros.sql`} 
-          download
-          class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
-        >
-          SQL 02 Insertar Registros Gimnasio
-        </a>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-        <a 
-          href={`${import.meta.env.BASE_URL}/03_scripts_varios.sql`} 
-          download
-          class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
-        >
-          SQL 03 Scripts Varios Gimnasio
-        </a>
+          <div class="bg-white text-black rounded-2xl p-5 flex flex-col justify-between gap-4 hover:scale-[1.02] transition">
+            <div>
+              <h5 class="text-xl font-semibold">
+                SQL Crear Objetos
+              </h5>
+
+              <p class="text-sm text-gray-600">
+                Script para creación de tablas y estructuras.
+              </p>
+            </div>
+
+            <a
+              href={`${import.meta.env.BASE_URL}/01_crear_objetos.sql`}
+              download
+              class="bg-black text-white text-center py-3 rounded-xl font-medium hover:bg-neutral-800 transition"
+            >
+              Descargar
+            </a>
+          </div>
+
+          <div class="bg-white text-black rounded-2xl p-5 flex flex-col justify-between gap-4 hover:scale-[1.02] transition">
+            <div>
+              <h5 class="text-xl font-semibold">
+                SQL Insertar Registros
+              </h5>
+
+              <p class="text-sm text-gray-600">
+                Inserción de registros para el sistema gimnasio.
+              </p>
+            </div>
+
+            <a
+              href={`${import.meta.env.BASE_URL}/02_insertar_registros.sql`}
+              download
+              class="bg-black text-white text-center py-3 rounded-xl font-medium hover:bg-neutral-800 transition"
+            >
+              Descargar
+            </a>
+          </div>
+
+          <div class="bg-white text-black rounded-2xl p-5 flex flex-col justify-between gap-4 hover:scale-[1.02] transition">
+            <div>
+              <h5 class="text-xl font-semibold">
+                SQL Scripts Varios
+              </h5>
+
+              <p class="text-sm text-gray-600">
+                Consultas y scripts complementarios.
+              </p>
+            </div>
+
+            <a
+              href={`${import.meta.env.BASE_URL}/03_scripts_varios.sql`}
+              download
+              class="bg-black text-white text-center py-3 rounded-xl font-medium hover:bg-neutral-800 transition"
+            >
+              Descargar
+            </a>
+          </div>
+
+        </div>
       </div>
+
+      <!-- PROYECTO -->
+      <div class="rounded-2xl border border-white/10 bg-[#141414] p-10">
+        <h4 class="text-4xl font-semibold mb-10">Proyecto Final</h4>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <div class="bg-white text-black rounded-2xl p-5 flex flex-col justify-between gap-4 hover:scale-[1.02] transition">
+            <div>
+              <h5 class="text-xl font-semibold">
+                MER-E Crow's Foot
+              </h5>
+
+              <p class="text-sm text-gray-600">
+                Modelo entidad relación en notación Crow's Foot.
+              </p>
+            </div>
+
+            <a
+              href={`${import.meta.env.BASE_URL}/crowsfootgimnasio.docx`}
+              download
+              class="bg-black text-white text-center py-3 rounded-xl font-medium hover:bg-neutral-800 transition"
+            >
+              Descargar
+            </a>
+          </div>
+
+          <div class="bg-white text-black rounded-2xl p-5 flex flex-col justify-between gap-4 hover:scale-[1.02] transition">
+            <div>
+              <h5 class="text-xl font-semibold">
+                MER-E Peter Chen
+              </h5>
+
+              <p class="text-sm text-gray-600">
+                Modelo conceptual usando notación Peter Chen.
+              </p>
+            </div>
+
+            <a
+              href={`${import.meta.env.BASE_URL}/meregimnasio.docx`}
+              download
+              class="bg-black text-white text-center py-3 rounded-xl font-medium hover:bg-neutral-800 transition"
+            >
+              Descargar
+            </a>
+          </div>
+
+          <div class="bg-white text-black rounded-2xl p-5 flex flex-col justify-between gap-4 hover:scale-[1.02] transition">
+            <div>
+              <h5 class="text-xl font-semibold">
+                Modelo Relacional
+              </h5>
+
+              <p class="text-sm text-gray-600">
+                Modelo relacional final del proyecto gimnasio.
+              </p>
+            </div>
+
+            <a
+              href={`${import.meta.env.BASE_URL}/relacionalgimnasio.dmd`}
+              download
+              class="bg-black text-white text-center py-3 rounded-xl font-medium hover:bg-neutral-800 transition"
+            >
+              Descargar
+            </a>
+          </div>
+
+        </div>
       </div>
 
-
-      <!-- Proyecto -->
-      <div class="rounded-2xl border border-[var(--white-icon-tr)] bg-[#1414149c] p-6 hover:bg-[var(--white-icon-tr)] transition">
-        <h4 class="text-2xl font-semibold mb-2">Proyecto</h4>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-          <a 
-          href={`${import.meta.env.BASE_URL}/crowsfootgimnasio.docx`} 
-          download
-          class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
-        >
-          MER-E Crow's Foot Proyecto Final
-        </a>
-
-        <a 
-          href={`${import.meta.env.BASE_URL}/meregimnasio.docx`} 
-          download
-          class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
-        >
-          MER-E Peter Chen Proyecto Final
-        </a>
-
-        <a 
-          href={`${import.meta.env.BASE_URL}/relacionalgimnasio.dmd`} 
-          download
-          class="px-6 py-4 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
-        >
-          Modelo Relacional Proyecto Final
-        </a>
-      </div>
-</div> <!-- card Proyecto -->
-</div> <!-- flex flex-col -->
-</div> <!-- max-w-7xl -->
+    </div>
+  </div>
 </section>
 
