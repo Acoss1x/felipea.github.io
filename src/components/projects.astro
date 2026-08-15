@@ -549,6 +549,53 @@ const projects: Project[] = [
             </a>
           </div>
 
+          <!-- PROYECTO -->
+      <div class="rounded-2xl border border-[var(--white-icon-tr)] bg-[#1414149c] p-6">
+        <h4 class="text-2xl font-semibold mb-6">Proyecto</h4>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+          <div class="bg-white text-black rounded-2xl p-6 flex flex-col justify-between min-h-[220px]">
+            <div>
+              <h5 class="text-xl font-bold mb-2">
+                Peter Chen Proyecto
+              </h5>
+
+              <p class="text-sm text-gray-700 mb-6">
+                Modelo MER-E de nuestro sistema de gestión de gimnasio usando la notación Peter-Chen.
+              </p>
+            </div>
+
+            <a
+              href={`${import.meta.env.BASE_URL}/meregimnasio.docx`}
+              download
+              class="bg-black text-white text-center py-3 rounded-xl hover:scale-105 transition"
+            >
+              Descargar
+            </a>
+          </div>
+
+          <div class="bg-white text-black rounded-2xl p-6 flex flex-col justify-between min-h-[220px]">
+            <div>
+              <h5 class="text-xl font-bold mb-2">
+                Modelo Relacional Final
+              </h5>
+
+              <p class="text-sm text-gray-700 mb-6">
+                Modelo relacional definitivo del proyecto de sistema de gestión de gimnasio, hecho en SQL data modeler.
+              </p>
+            </div>
+
+            <a
+              href={`${import.meta.env.BASE_URL}/relacionalgimnasio.dmd`}
+              download
+              class="bg-black text-white text-center py-3 rounded-xl hover:scale-105 transition"
+            >
+              Descargar
+            </a>
+          </div>
+
         </div>
       </div>
 
