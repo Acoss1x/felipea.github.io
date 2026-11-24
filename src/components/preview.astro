@@ -1,0 +1,59 @@
+---
+import { Code } from "astro:components";
+
+// Muestra un fragmento de la evidencia: una imagen de /public o un archivo de src/snippets.
+interface Props {
+  image?: string;
+  code?: string;
+  alt: string;
+}
+
+const { image, code, alt } = Astro.props;
+const snippets = import.meta.glob("../snippets/*", {
+  query: "?raw",
+  import: "default",
+  eager: true,
+}) as Record<string, string>;
+
+const source = code ? snippets[`../snippets/${code}`] : undefined;
+if (code && source === undefined) throw new Error(`Falta el fragmento ${code}`);
+
+const ext = code?.split(".").pop();
+const lang = ext === "sql" ? (code?.startsWith("rutacar") ? "sql" : "plsql") : ext;
+const src = image && `${import.meta.env.BASE_URL}/${image}`;
+---
+
+{
+  src && (
+    <a
+      href={src}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`Ampliar vista previa: ${alt}`}
+      class="block mb-6 rounded-xl border border-gray-200 bg-white overflow-hidden"
+    >
+      <img src={src} alt={`Vista previa: ${alt}`} loading="lazy" class="w-full h-48 object-contain p-2" />
+    </a>
+  )
+}
+{
+  source && (
+    <div class="preview-code mb-6" role="region" aria-label={`Fragmento: ${alt}`}>
+      <Code code={source.trim()} lang={lang as any} theme="github-dark" />
+    </div>
+  )
+}
+
+<style>
+  .preview-code :global(pre) {
+    height: 12rem;
+    overflow: auto;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    font-size: 0.7rem;
+    line-height: 1.5;
+  }
+  .preview-code :global(pre *) {
+    font-family: ui-monospace, Consolas, monospace;
+  }
+</style>

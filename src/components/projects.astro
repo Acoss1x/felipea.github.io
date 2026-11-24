@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+import Preview from "./preview.astro";
 import svgl from "../../public/svgl.png";
 import stockin from "../../public/stockin.png";
 import moviesfordevs from "../../public/moviesfordevs.png";
@@ -72,6 +73,7 @@ const projects: Project[] = [
               <p class="text-sm text-gray-700 mb-6">
                 Primer modelo conceptual trabajado en clase, el cual trata de una aerolinea.
               </p>
+              <Preview image="Modelo1.png" alt="Modelo 1" />
             </div>
 
             <a
@@ -89,6 +91,7 @@ const projects: Project[] = [
               <p class="text-sm text-gray-700 mb-6">
                 Segundo ejercicio de modelado entidad relación acerca de una biblioteca.
               </p>
+              <Preview image="Modelo2.png" alt="Modelo 2" />
             </div>
 
             <a
@@ -106,6 +109,7 @@ const projects: Project[] = [
               <p class="text-sm text-gray-700 mb-6">
                 Ejercicio para modelar un torneo de futbol de la Universidad El Bosque.
               </p>
+              <Preview image="Modelo3.png" alt="Modelo 3" />
             </div>
 
             <a
@@ -123,6 +127,7 @@ const projects: Project[] = [
               <p class="text-sm text-gray-700 mb-6">
                 MER del primer punto del primer taller, acerca de una empresa de transportes.
               </p>
+              <Preview image="Modelo4.png" alt="Modelo 4" />
             </div>
 
             <a
@@ -140,6 +145,7 @@ const projects: Project[] = [
               <p class="text-sm text-gray-700 mb-6">
                 MER del segundo punto del primer taller, acerca de una empresa de bienes raices.
               </p>
+              <Preview image="Modelo5.png" alt="Modelo 5" />
             </div>
 
             <a
@@ -157,6 +163,7 @@ const projects: Project[] = [
               <p class="text-sm text-gray-700 mb-6">
                 MER del tercer punto del primer taller, en el cual se realiza un modelo a partir de un esquema.
               </p>
+              <Preview image="Modelo6.png" alt="Modelo 6" />
             </div>
 
             <a
@@ -174,6 +181,7 @@ const projects: Project[] = [
               <p class="text-sm text-gray-700 mb-6">
                 MER-E del punto 4 del primer taller, acerca de una biblioteca, usando agregación.
               </p>
+              <Preview image="Modelo7.png" alt="Modelo 7" />
             </div>
 
             <a
@@ -191,6 +199,7 @@ const projects: Project[] = [
               <p class="text-sm text-gray-700 mb-6">
                 MER del punto 5 del primer taller, acerca de una cadena de supermercados.
               </p>
+              <Preview image="Modelo8.png" alt="Modelo 8" />
             </div>
 
             <a
@@ -208,6 +217,7 @@ const projects: Project[] = [
               <p class="text-sm text-gray-700 mb-6">
                 Descripción del MER del 6 punto del taller, en formato PDF.
               </p>
+              <Preview image="previews/modelo9.png" alt="Modelo 9" />
             </div>
 
             <a
@@ -225,6 +235,7 @@ const projects: Project[] = [
               <p class="text-sm text-gray-700 mb-6">
                 MER del punto 7 del taller, acerca de una oficina de registro de una universidad.
               </p>
+              <Preview image="Modelo10.png" alt="Modelo 10" />
             </div>
 
             <a
@@ -242,6 +253,7 @@ const projects: Project[] = [
               <p class="text-sm text-gray-700 mb-6">
                 Modelos del taller V3, residuos y comidas.
               </p>
+              <Preview image="Modelo11y12.png" alt="Modelo 11 y 12" />
             </div>
 
             <a
@@ -259,6 +271,7 @@ const projects: Project[] = [
               <p class="text-sm text-gray-700 mb-6">
                 MER de problemática del préstamo de elementos de la cueva de la Universidad del Bosque
               </p>
+              <Preview image="Modelo13.png" alt="Modelo 13" />
             </div>
 
             <a
@@ -276,6 +289,7 @@ const projects: Project[] = [
               <p class="text-sm text-gray-700 mb-6">
                 MER Taller V4.
               </p>
+              <Preview image="tallerv4.png" alt="Modelo 14 al 17" />
             </div>
 
             <a
@@ -293,6 +307,7 @@ const projects: Project[] = [
               <p class="text-sm text-gray-700 mb-6">
                 Primer punto del primer taller entregable, en el cual a partir de un proceso de reducción de tablas, se debía crear el Modelo Entidad Relacional correspondiente.
               </p>
+              <Preview image="punto1primertaller.png" alt="MER Punto 1 Primer Taller Entregable" />
             </div>
 
             <a
@@ -310,6 +325,7 @@ const projects: Project[] = [
               <p class="text-sm text-gray-700 mb-6">
                 Modelo MER-E para gestión de residuos, segundo punto del primer taller entregable.
               </p>
+              <Preview image="residuosOK.png" alt="MER-E Residuos" />
             </div>
 
             <a
@@ -327,6 +343,7 @@ const projects: Project[] = [
               <p class="text-sm text-gray-700 mb-6">
                 Modelo MER-E orientado a sistema de comidas, parte del segundo punto del primer taller entregable-
               </p>
+              <Preview image="comidaOK.png" alt="MER-E Comidas" />
             </div>
 
             <a
@@ -390,6 +407,7 @@ const projects: Project[] = [
               <p class="text-sm text-gray-700 mb-6">
                 Taller avanzado de normalización, llevando ejercicios hasta 3FN, hecho en excel.
               </p>
+              <Preview image="previews/normalizacion.png" alt="Segundo Taller Entregable (Normalizacion)" />
             </div>
 
             <a
@@ -419,6 +437,7 @@ const projects: Project[] = [
               <p class="text-sm text-gray-700 mb-6">
                 Tercer taller grupal, en el cual se realizaron 8 puntos de álgebra relacional, los cuales parten de un taller ya subido anteriormente al aula.
               </p>
+              <Preview image="previews/algebra.png" alt="Taller Álgebra Relacional" />
             </div>
 
             <a
@@ -448,6 +467,7 @@ const projects: Project[] = [
               <p class="text-sm text-gray-700 mb-6">
                 Script usado para creación de tablas y objetos del gimnasio, nuestro proyecto final de la asignatura.
               </p>
+              <Preview code="crear-objetos.sql" alt="SQL Crear Objetos" />
             </div>
 
             <a
@@ -468,6 +488,7 @@ const projects: Project[] = [
               <p class="text-sm text-gray-700 mb-6">
                 Inserción de datos para las tablas de el sistema de gestión del gimnasio, nuestro proyecto final de la asignatura.
               </p>
+              <Preview code="insertar-registros.sql" alt="SQL Insertar Registros" />
             </div>
 
             <a
@@ -488,6 +509,7 @@ const projects: Project[] = [
               <p class="text-sm text-gray-700 mb-6">
                 Consultas, updates y scripts complementarios para nuestro sistema de gestión de gimnasio, nuestro proyecto final de la asignatura.
               </p>
+              <Preview code="scripts-varios.sql" alt="SQL Scripts Varios" />
             </div>
 
             <a
@@ -564,6 +586,7 @@ const projects: Project[] = [
             <div>
               <h5 class="text-xl font-bold mb-2">Laboratorio Optimizacion SQL (Scripts)</h5>
               <p class="text-sm text-gray-700 mb-6">Laboratorio de optimización sobre el esquema RAPIDEX, escalado de 120 mil a más de 2,4 millones de filas en Oracle 19c. Incluye la creación del esquema, la carga de datos y las demos de uso de índices y estadísticas.</p>
+              <Preview code="optimizacion.sql" alt="Laboratorio Optimizacion SQL (Scripts)" />
             </div>
             <a href={`${import.meta.env.BASE_URL}/source.zip`} download class="bg-black text-white text-center py-3 rounded-xl hover:scale-105 transition">Descargar</a>
           </div>
@@ -572,6 +595,7 @@ const projects: Project[] = [
             <div>
               <h5 class="text-xl font-bold mb-2">Laboratorio Optimizacion SQL (Diapositivas)</h5>
               <p class="text-sm text-gray-700 mb-6">Presentación del laboratorio RAPIDEX: por qué el optimizador puede ignorar un índice selectivo y qué pasa cuando decide con estadísticas desactualizadas, con sus planes de ejecución.</p>
+              <Preview image="previews/optimizacion.png" alt="Laboratorio Optimizacion SQL (Diapositivas)" />
             </div>
             <a href={`${import.meta.env.BASE_URL}/source.pptx`} download class="bg-black text-white text-center py-3 rounded-xl hover:scale-105 transition">Descargar</a>
           </div>
@@ -580,6 +604,7 @@ const projects: Project[] = [
             <div>
               <h5 class="text-xl font-bold mb-2">Taller SQL Avanzado</h5>
               <p class="text-sm text-gray-700 mb-6">Taller en parejas sobre el caso Banco Andino: concurrencia entre dos sesiones, índices y optimización, SQL analítico, jerárquico y MERGE, y un reto final de diagnóstico de transferencias.</p>
+              <Preview code="sql-avanzado.sql" alt="Taller SQL Avanzado" />
             </div>
             <a href={`${import.meta.env.BASE_URL}/scripts taller sql.zip`} download class="bg-black text-white text-center py-3 rounded-xl hover:scale-105 transition">Descargar</a>
           </div>
@@ -596,6 +621,7 @@ const projects: Project[] = [
             <div>
               <h5 class="text-xl font-bold mb-2">Ejercicio PL SQL #1</h5>
               <p class="text-sm text-gray-700 mb-6">Ejercicio realizado en clase acerca de PL/SQL. Usa cursores explícitos, con y sin parámetros, para recorrer empleados y mostrar su jefe, salario y comisión.</p>
+              <Preview code="plsql-clase.sql" alt="Ejercicio PL SQL #1" />
             </div>
             <a href={`${import.meta.env.BASE_URL}/pl sql clase.sql`} download class="bg-black text-white text-center py-3 rounded-xl hover:scale-105 transition">Descargar</a>
           </div>
@@ -604,6 +630,7 @@ const projects: Project[] = [
             <div>
               <h5 class="text-xl font-bold mb-2">Pruebas PL/SQL</h5>
               <p class="text-sm text-gray-700 mb-6">Script creado para probar las funciones, procedimientos y triggers del taller PL/SQL. Cubre productos, stock, pedidos, cupos y descuentos, comparando con los resultados y errores esperados.</p>
+              <Preview code="plsql-pruebas.sql" alt="Pruebas PL/SQL" />
             </div>
             <a href={`${import.meta.env.BASE_URL}/pruebas pl sql.sql`} download class="bg-black text-white text-center py-3 rounded-xl hover:scale-105 transition">Descargar</a>
           </div>
@@ -612,6 +639,7 @@ const projects: Project[] = [
             <div>
               <h5 class="text-xl font-bold mb-2">Laboratorio Trigger Compuesto</h5>
               <p class="text-sm text-gray-700 mb-6">Laboratorio grupal que provoca el error de tabla mutante ORA-04091 al recalcular el total de un pedido y lo soluciona con un trigger compuesto, con pruebas de verificación.</p>
+              <Preview code="trigger-compuesto.sql" alt="Laboratorio Trigger Compuesto" />
             </div>
             <a href={`${import.meta.env.BASE_URL}/LAB_TRIGGER_COMPUESTO_.sql`} download class="bg-black text-white text-center py-3 rounded-xl hover:scale-105 transition">Descargar</a>
           </div>
@@ -620,6 +648,7 @@ const projects: Project[] = [
             <div>
               <h5 class="text-xl font-bold mb-2">Ejercicios Parcial PL/SQL</h5>
               <p class="text-sm text-gray-700 mb-6">Ejercicios de repaso para el parcial de PL/SQL: función de nómina por departamento, cursor con FOR UPDATE, procedimiento de aumento salarial, trigger de auditoría y un paquete.</p>
+              <Preview code="repaso-parcial.sql" alt="Ejercicios Parcial PL/SQL" />
             </div>
             <a href={`${import.meta.env.BASE_URL}/Repaso Parcial.sql`} download class="bg-black text-white text-center py-3 rounded-xl hover:scale-105 transition">Descargar</a>
           </div>
@@ -635,6 +664,7 @@ const projects: Project[] = [
             <div>
               <h5 class="text-xl font-bold mb-2">Taller No Entregable MongoDB</h5>
               <p class="text-sm text-gray-700 mb-6">Taller de 30 ejercicios basado en el sample de airbnb. Incluye inserciones, consultas con filtros, actualizaciones y agregaciones con $group, $unwind, $bucket y $lookup.</p>
+              <Preview code="mongo.js" alt="Taller No Entregable MongoDB" />
             </div>
             <a href={`${import.meta.env.BASE_URL}/taller no entregable.js`} download class="bg-black text-white text-center py-3 rounded-xl hover:scale-105 transition">Descargar</a>
           </div>
@@ -643,6 +673,7 @@ const projects: Project[] = [
             <div>
               <h5 class="text-xl font-bold mb-2">Taller MQL</h5>
               <p class="text-sm text-gray-700 mb-6">Taller grupal de 3 ejercicios resuelto en 20 minutos durante la clase: filtros por capacidad y baños, precio promedio por tipo de propiedad y los 5 anfitriones con más alojamientos.</p>
+              <Preview code="mql.js" alt="Taller MQL" />
             </div>
             <a href={`${import.meta.env.BASE_URL}/taller mql 2.js`} download class="bg-black text-white text-center py-3 rounded-xl hover:scale-105 transition">Descargar</a>
           </div>
@@ -659,6 +690,7 @@ const projects: Project[] = [
             <div>
               <h5 class="text-xl font-bold mb-2">RutaCar - Backend</h5>
               <p class="text-sm text-gray-700 mb-6">API REST de RutaCar, nuestro sistema de gestión de alquiler de vehículos, hecha en Spring Boot (Java 21) con autenticación JWT. Usa PostgreSQL para reservas, pagos y flota, con funciones, procedimientos y triggers, y MongoDB para las inspecciones y fotos de los vehículos. Incluye los scripts SQL.</p>
+              <Preview code="rutacar-back.sql" alt="RutaCar - Backend" />
             </div>
             <a href="https://github.com/Acoss1x/alquiler-vehiculos-bd2" target="_blank" rel="noopener noreferrer" class="bg-black text-white text-center py-3 rounded-xl hover:scale-105 transition">Ver repositorio</a>
           </div>
@@ -667,6 +699,7 @@ const projects: Project[] = [
             <div>
               <h5 class="text-xl font-bold mb-2">RutaCar - Frontend</h5>
               <p class="text-sm text-gray-700 mb-6">Interfaz web de RutaCar hecha en Angular 20, que consume la API del backend. Permite consultar el catálogo, cotizar y reservar vehículos, y gestionar pagos, clientes, inspecciones, flota, empleados y reportes según el rol del usuario.</p>
+              <Preview code="rutacar-front.ts" alt="RutaCar - Frontend" />
             </div>
             <a href="https://github.com/nmanriqueve-hue/FrontBD" target="_blank" rel="noopener noreferrer" class="bg-black text-white text-center py-3 rounded-xl hover:scale-105 transition">Ver repositorio</a>
           </div>
