@@ -18,7 +18,8 @@ const snippets = import.meta.glob("../snippets/*", {
 const source = code ? snippets[`../snippets/${code}`] : undefined;
 if (code && source === undefined) throw new Error(`Falta el fragmento ${code}`);
 
-const ext = code?.split(".").pop();
+// Los .ts/.js llevan ".txt" al final para que astro check no los analice.
+const ext = code?.replace(/.txt$/, "").split(".").pop();
 const lang = ext === "sql" ? (code?.startsWith("rutacar") ? "sql" : "plsql") : ext;
 const src = image && `${import.meta.env.BASE_URL}/${image}`;
 ---
