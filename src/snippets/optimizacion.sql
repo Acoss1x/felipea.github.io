@@ -1,6 +1,13 @@
-EXPLAIN PLAN FOR SELECT * FROM pedido WHERE id_ruta = 12;
-SELECT * FROM TABLE(DBMS_XPLAN.DISPLAY(NULL,NULL,'BASIC +COST +ROWS +PREDICATE'));
-
--- Resultado esperado (capturado en el laboratorio real):
--- Rows: 3.243   Cost: 205   Operacion: TABLE ACCESS FULL
--- Este resultado se compara contra 03b_demo1_despues.sql
+INSERT INTO pedido (id_pedido, id_ruta, id_cliente, valor, estado, fecha_compra)
+SELECT
+    2120000 + rn,
+    MOD(rn, 37) + 1,
+    MOD(rn, 40) + 1,
+    ROUND(DBMS_RANDOM.VALUE(15000, 180000), -2),
+    CASE MOD(rn, 20)
+        WHEN 0 THEN 'CANCELADO' WHEN 1 THEN 'CANCELADO'
+        WHEN 2 THEN 'CONFIRMADO' ELSE 'ENTREGADO'
+    END,
+    DATE '2026-01-01' + MOD(rn, 110) + DBMS_RANDOM.VALUE(0, 1)
+FROM (SELECT LEVEL AS rn FROM DUAL CONNECT BY LEVEL <= 300000);
+COMMIT;
