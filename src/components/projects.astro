@@ -613,7 +613,7 @@ const projects: Project[] = [
               <h5 class="text-xl font-bold mb-2">Laboratorio Trigger Compuesto</h5>
               <p class="text-sm text-gray-700 mb-6">Laboratorio hecho para comprobar el funcionamiento del trigger compuesto, y el error ORA-04091</p>
             </div>
-            <a href={`${import.meta.env.BASE_URL}/LAB_TRIGGER_COMPUESTO.sql`} download class="bg-black text-white text-center py-3 rounded-xl hover:scale-105 transition">Descargar</a>
+            <a href={`${import.meta.env.BASE_URL}/LAB_TRIGGER_COMPUESTO_.sql`} download class="bg-black text-white text-center py-3 rounded-xl hover:scale-105 transition">Descargar</a>
           </div>
 
           <div class="bg-white text-black rounded-2xl p-6 flex flex-col justify-between min-h-[220px]">
@@ -655,7 +655,21 @@ const projects: Project[] = [
         <h4 class="text-2xl font-semibold mb-6">Proyecto (BD2)</h4>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <p class="text-sm text-white/50">Próximamente...</p>
+          <div class="bg-white text-black rounded-2xl p-6 flex flex-col justify-between min-h-[220px]">
+            <div>
+              <h5 class="text-xl font-bold mb-2">RutaCar - Backend</h5>
+              <p class="text-sm text-gray-700 mb-6">API REST de RutaCar, nuestro sistema de gestión de alquiler de vehículos, hecha en Spring Boot (Java 21) con autenticación JWT. Usa PostgreSQL para reservas, pagos y flota, con funciones, procedimientos y triggers, y MongoDB para las inspecciones y fotos de los vehículos. Incluye los scripts SQL.</p>
+            </div>
+            <a href="https://github.com/Acoss1x/alquiler-vehiculos-bd2" target="_blank" rel="noopener noreferrer" class="bg-black text-white text-center py-3 rounded-xl hover:scale-105 transition">Ver repositorio</a>
+          </div>
+
+          <div class="bg-white text-black rounded-2xl p-6 flex flex-col justify-between min-h-[220px]">
+            <div>
+              <h5 class="text-xl font-bold mb-2">RutaCar - Frontend</h5>
+              <p class="text-sm text-gray-700 mb-6">Interfaz web de RutaCar hecha en Angular 20, que consume la API del backend. Permite consultar el catálogo, cotizar y reservar vehículos, y gestionar pagos, clientes, inspecciones, flota, empleados y reportes según el rol del usuario.</p>
+            </div>
+            <a href="https://github.com/nmanriqueve-hue/FrontBD" target="_blank" rel="noopener noreferrer" class="bg-black text-white text-center py-3 rounded-xl hover:scale-105 transition">Ver repositorio</a>
+          </div>
         </div>
       </div>
 
